@@ -30,7 +30,9 @@ for x in id:
   t=[x]
  
  if len(t) >= 3:
-  while t[-1] <= t[-2]:
+  #print(t)
+  while t[-1] <= t[-2] and len(t) > 2:
+   #print(t)
    t.pop(-1)
   while t[0] > t[-1]:
    t.pop(0)
